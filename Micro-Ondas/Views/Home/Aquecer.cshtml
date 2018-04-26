@@ -1,0 +1,24 @@
+﻿@model Micro_Ondas.Models.Tipos
+
+
+@Html.Hidden("nomeAquecer", Model.Nome)
+@Html.Hidden("tempoAquecer", Model.Tempo)
+@Html.Hidden("potenciaAquecer", Model.Potencia)
+@Html.Hidden("caracterAquecer", Model.Caracter)
+
+
+<script>
+	onload = function () {
+		mostrar();
+	}
+</script>
+
+
+<h1 class="text-center text-red" id="h1Aquecido">Aquecendo...</h1>
+
+<div id="divResultado" class="">
+
+</div>
+<div class="text-center">
+	@Html.ActionLink("Voltar", "Index","", new { @class="btn btn-primary", id="voltar", disabled="" })
+</div>

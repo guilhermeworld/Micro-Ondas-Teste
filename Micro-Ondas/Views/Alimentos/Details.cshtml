@@ -1,0 +1,45 @@
+﻿@model Micro_Ondas.Models.Tipos
+
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="form-group row">
+	<div class="col-md-4">
+		<label>Nome: </label>
+		@Html.DisplayFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control" } })
+	</div>
+</div>
+
+<div class="form-group row">
+	<div class="col-md-4">
+		<label>Tempo: </label>
+		@Html.DisplayFor(model => model.Tempo, new { htmlAttributes = new { @class = "form-control" } })
+	</div>
+</div>
+
+<div class="form-group row">
+	<div class="col-md-4">
+		<label>Potência: </label>
+		@Html.DisplayFor(model => model.Potencia, new { htmlAttributes = new { @class = "form-control" } })
+	</div>
+</div>
+
+<div class="form-group row">
+	<div class="col-md-4">
+		<label>Instruções: </label>
+		@Html.DisplayFor(model => model.Instruções, new { htmlAttributes = new { @class = "form-control" } })
+	</div>
+</div>
+
+<div class="form-group row">
+	<div class="col-md-4">
+		<label>Caracter: </label>
+		@Html.DisplayFor(model => model.Caracter, new { htmlAttributes = new { @class = "form-control" } })
+	</div>
+</div>
+
+<p>
+	@Html.ActionLink("Voltar", "Index","", new { @class = "btn-success btn btn-lg" })
+</p>
