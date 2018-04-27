@@ -1,5 +1,4 @@
-# Micro-Ondas-Teste
-## Micro-Ondas Digital
+# Micro-Ondas Digital
 
 ### Tecnologias utilizadas
 - ASP.NET MVC na linguagem C#;
